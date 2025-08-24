@@ -97,20 +97,19 @@ body {
     color: #946EFF;
 }
 
-/* ===== Media Queries للموبايل ===== */
 @media (max-width: 600px) {
     #c {
-        gap: 15px; /* أقل شوية */
+        gap: 15px;
     }
     #c button, #num {
-        width: 80px;      /* أصغر */
+        width: 80px;
         height: 80px;
     }
     #c button {
-        font-size: 40px;  /* أصغر */
+        font-size: 40px;
     }
     #num {
-        font-size: 60px;  /* أصغر */
+        font-size: 60px;
         padding: 10px;
     }
     #r {
@@ -119,4 +118,5 @@ body {
         font-size: 16px;
 
     }
+
 }
