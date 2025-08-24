@@ -2,25 +2,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 40px; /* ثابت على الشاشات الكبيرة */
+    flex-wrap: nowrap;
 }
 
 #c button {
-    width: 150px;         /* wider button */
-    height: 150px;        /* taller button */
-    font-size: 80px;      /* bigger + and - */
+    width: 150px;
+    height: 150px;
+    font-size: 80px;
     text-align: center;
-    border-radius: 20px;  /* optional: make it rounder */
-    cursor: pointer;      /* show pointer on hover */
-    transition: transform 0.2s; /* smooth hover effect */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
 #c button:hover {
-    transform: scale(1.1);  /* slightly bigger on hover */
+    transform: scale(1.1);
 }
 
 #c button:active {
-    transform: scale(1.6);  /* slightly bigger on hover */
+    transform: scale(1.4);
+    box-shadow: inset 0 5px 50px rgba(0, 81, 255, 0.3);
 }
 
 #num {
@@ -30,13 +32,13 @@
     background-color: #946EFF;
     width: 180px;
     height: 180px;
-    border-radius: 30px;
-    color: rgb(255, 255, 255);
+    border-radius: 60px;
+    color: white;
 
     display: flex;
     justify-content: center;
     align-items: center;  
-    padding: 20px 20px;  
+    padding: 20px;
 }
 
 #r {
@@ -50,6 +52,17 @@
     border: none;
     font-family: "unboundedblack";
     color: #BAA2FF;
+    transition: transform 0.2s;
+}
+
+#r:hover {
+    color: #9e7dff;
+    transform: scale(1.2);
+}
+
+#r:active {
+    color: #b9a2ff;
+    transform: scale(1.5);
 }
 
 body {
@@ -63,6 +76,7 @@ body {
 
 #main-c {
     text-align: center;
+    padding: 20px;
 }
 
 @font-face {
@@ -70,15 +84,7 @@ body {
   src: url(Fonts/Unbounded-Black.ttf);
 }
 
-#increase {
-    background: none;
-    outline: none;
-    border: none;
-    font-family: "unboundedblack";
-    color: #BAA2FF;
-}
-
-#decrease {
+#increase, #decrease {
     background: none;
     outline: none;
     border: none;
@@ -89,5 +95,28 @@ body {
 ::selection {
     background-color: white;
     color: #946EFF;
+}
 
+/* ===== Media Queries للموبايل ===== */
+@media (max-width: 600px) {
+    #c {
+        gap: 15px; /* أقل شوية */
+    }
+    #c button, #num {
+        width: 80px;      /* أصغر */
+        height: 80px;
+    }
+    #c button {
+        font-size: 40px;  /* أصغر */
+    }
+    #num {
+        font-size: 60px;  /* أصغر */
+        padding: 10px;
+    }
+    #r {
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+
+    }
 }
