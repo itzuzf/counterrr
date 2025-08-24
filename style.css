@@ -19,6 +19,10 @@
     transform: scale(1.1);  /* slightly bigger on hover */
 }
 
+#c button:active {
+    transform: scale(1.6);  /* slightly bigger on hover */
+}
+
 #num {
     font-size: 110px;
     margin: 0;
@@ -85,4 +89,5 @@ body {
 ::selection {
     background-color: white;
     color: #946EFF;
+
 }
