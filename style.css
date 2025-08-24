@@ -1,0 +1,88 @@
+#c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#c button {
+    width: 150px;         /* wider button */
+    height: 150px;        /* taller button */
+    font-size: 80px;      /* bigger + and - */
+    text-align: center;
+    border-radius: 20px;  /* optional: make it rounder */
+    cursor: pointer;      /* show pointer on hover */
+    transition: transform 0.2s; /* smooth hover effect */
+}
+
+#c button:hover {
+    transform: scale(1.1);  /* slightly bigger on hover */
+}
+
+#num {
+    font-size: 110px;
+    margin: 0;
+    font-family: "unboundedblack";
+    background-color: #946EFF;
+    width: 180px;
+    height: 180px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 20px 20px;  
+}
+
+#r {
+    display: block;
+    margin: 20px auto;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    background: none;
+    outline: none;
+    border: none;
+    font-family: "unboundedblack";
+    color: #BAA2FF;
+}
+
+body {
+    background-color: #F7F3FE;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-c {
+    text-align: center;
+}
+
+@font-face {
+  font-family: 'unboundedblack';
+  src: url(Fonts/Unbounded-Black.ttf);
+}
+
+#increase {
+    background: none;
+    outline: none;
+    border: none;
+    font-family: "unboundedblack";
+    color: #BAA2FF;
+}
+
+#decrease {
+    background: none;
+    outline: none;
+    border: none;
+    font-family: "unboundedblack";
+    color: #BAA2FF;
+}
+
+::selection {
+    background-color: white;
+    color: #946EFF;
+}
